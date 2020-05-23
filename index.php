@@ -1,6 +1,5 @@
 <?php 
-	session_start();	
-	if(isset($_SESSION['sessao'])){
+	if(isset($_COOKIE['usuario'])){
 		include("cabecalho.php");
 		include("rodape.php");
 	}
