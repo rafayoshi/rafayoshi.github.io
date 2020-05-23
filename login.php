@@ -9,6 +9,8 @@
         echo "Usuário e/ou senha estão incorreto(s).";
     }
     else{
+        session_start();
+        $_SESSION['sessao']=$usuario["NOME"];
         header("Location: index.php");
     }
 ?>
